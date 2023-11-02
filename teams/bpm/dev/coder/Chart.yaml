@@ -1,0 +1,12 @@
+apiVersion: v2
+name: coder-stack
+type: application
+version: 1.0.0
+appVersion: 2.3.2
+dependencies:
+- name: coder
+  version: 2.3.2
+  repository: https://helm.coder.com/v2
+- name: postgresql
+  repository: https://charts.bitnami.com/bitnami
+  version: 13.0.0

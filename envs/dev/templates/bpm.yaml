@@ -17,8 +17,8 @@ spec:
     targetRevision: {{ .Values.spec.source.targetRevision }}
     path: teams/bpm/dev
     helm:
-      values: |
-        {{- toYaml .Values | nindent 8 }}
+      valueFiles:
+      - values.yaml    
   syncPolicy:
     automated:
       prune: true
